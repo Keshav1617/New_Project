@@ -1,0 +1,29 @@
+body{
+  background-color:rgb(240, 192, 192);
+}
+.nav-link{
+  color: black !important;
+}
+.link-body-emphasis{
+  color: black !important;
+}
+.cover-container {
+  min-height: 100vh; /* Full viewport height */ 
+}
+.carousel-inner{
+  height: 60%;
+} 
+.card{
+  height: 20vh;
+}
+.rounded-svg {
+  border-radius: 20px; /* Make the corners rounded */
+  overflow: hidden; /* Ensure the rounded corners apply to the content inside the SVG */
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: var(--bs-nav-pills-link-active-color);
+  background-color: rgb(79, 219, 184);
+}
+.card-body{
+  background-color: whitesmoke;
+}
