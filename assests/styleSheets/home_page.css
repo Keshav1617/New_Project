@@ -10,9 +10,17 @@ body{
 .cover-container {
   min-height: 100vh; /* Full viewport height */ 
 }
-.carousel-inner{
+/* .carousel-inner{
   height: 60%;
-} 
+}  */
+/* #myCarousel {
+  height: 0vh;
+} */
+
+/* #myCarousel .carousel-item img {
+  height: 100%; 
+  object-fit: cover; 
+} */
 .card{
   height: 20vh;
 }
@@ -26,4 +34,102 @@ body{
 }
 .card-body{
   background-color: whitesmoke;
+}
+
+/* Grid container for cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+  row-gap: 15px; /* Space between the cards */
+  column-gap: 15px;
+  padding: 20px; /* Padding around the grid */
+}
+
+/* Card styles */
+.card {
+  border-radius: 8px; /* Rounded corners for the cards */
+  overflow: hidden; /* Ensure images and content stay inside the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow to cards */
+  margin: 0 auto; /* Center cards within their grid cells */
+}
+
+.card-img {
+  max-width: 100%; /* Make images responsive */
+  height: auto;
+  object-fit: cover; /* Ensure images are nicely cropped */
+}
+
+.card-img-overlay {
+  background: rgba(0, 0, 0, 0.5); /* Add a dark overlay to make text readable */
+  color: white; /* White text for better visibility */
+  padding: 20px;
+  border-radius: 0 0 8px 8px; /* Match the card border radius */
+}
+
+.card-img-top1 {
+  object-fit: cover; /* Crop the image to fit the card without distortion */
+  width: 100%; /* Ensure the image spans the card width */
+  height: 200px; /* Set a fixed height for uniformity */
+}
+
+/* Ensure cards fill the height of their parent column */
+.card1 {
+  height: 100%; /* Ensures card height matches the column */
+}
+
+/* Optional: Limit container width for better alignment */
+.container1 {
+  max-width: 1200px; /* Adjust the width of the container as needed */
+}
+
+.custom-container {
+  max-width: 1200px; /* Adjust the width of the container */
+  margin: auto; /* Center the container */
+}
+
+/* Custom Row */
+.custom-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Space between columns */
+}
+
+/* Custom Column */
+.custom-col {
+  flex: 1 1 calc(50% - 1.5rem); /* Two columns in medium screen */
+  display: flex;
+}
+
+/* Custom Card */
+.custom-card {
+  background: #fff; /* White background for the card */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensure contents stay within card */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom Card Image */
+.custom-card-image {
+  width: 100%; /* Full width of the card */
+  height: 200px; /* Fixed height for uniformity */
+  object-fit: cover; /* Crop image to fit the card */
+}
+
+/* Custom Card Body */
+.custom-card-body {
+  padding: 1rem; /* Add padding inside the card body */
+}
+
+/* Custom Card Title */
+.custom-card-title {
+  font-size: 1.25rem; /* Adjust title font size */
+  margin-bottom: 0.5rem;
+}
+
+/* Custom Card Text */
+.custom-card-text {
+  font-size: 1rem;
+  color: #666; /* Text color */
 }
